@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Education — Shraddha</title>
+
+<style>
+:root{ 
+  --accent:#5b7bff;
+  --accent2:#8a4cff;
+  font-family: Inter, Arial; 
+}
+
+body{
+  margin:0;
+  background:linear-gradient(135deg,#7aa7ff,#b085ff,#f6d4ff);
+  background-size:200% 200%;
+  animation:bgMove 10s infinite;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+}
+
+@keyframes bgMove{
+  0%{background-position:0 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0 50%}
+}
+
+.container{
+  width:100%;
+  max-width:900px;
+  background:rgba(255,255,255,0.5);
+  backdrop-filter:blur(12px);
+  padding:20px;
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+nav{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-bottom:20px;
+}
+
+nav a{
+  background:var(--accent2);
+  color:white;
+  padding:10px 18px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+h2{
+  color:#4a32b6;
+  font-size:24px;
+  margin-top:0;
+}
+
+/* TABLE STYLING */
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:15px;
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+th{
+  background:linear-gradient(90deg,#5b7bff,#8a4cff);
+  color:white;
+  padding:12px;
+  font-size:16px;
+  letter-spacing:0.5px;
+}
+
+td{
+  padding:12px;
+  font-size:15px;
+  color:#333;
+  background:rgba(255,255,255,0.8);
+}
+
+tr:nth-child(even) td{
+  background:#f0e9ff; /* light purple */
+}
+
+tr:hover td{
+  background:#e3d4ff; /* slightly darker hover */
+}
+</style>
+
+</head>
+
+<body>
+<div class="container">
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="education.html">Education</a>
+  <a href="skills.html">Skills</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<h2>Education</h2>
+
+<table>
+  <tr>
+    <th>Year</th>
+    <th>Course</th>
+    <th>School / College</th>
+  </tr>
+
+  <tr>
+    <td>2025-26</td>
+    <td>12th Grade</td>
+    <td>Your School</td>
+  </tr>
+
+  <tr>
+    <td>2024-25</td>
+    <td>11th Grade</td>
+    <td>Your School</td>
+  </tr>
+
+  <tr>
+    <td>2022-23</td>
+    <td>10th Grade</td>
+    <td>Your School</td>
+  </tr>
+</table>
+
+</div>
+</body>
+</html>
